@@ -1,0 +1,208 @@
+@media (max-width: 991px) {
+    .navbar {
+
+    }
+
+    .navbar .mobile {
+        display: block;
+        position: relative;
+    }
+
+
+    .navbar .navbar__block {
+       display: none;
+    }
+
+    .navbar .mobile .navbar__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .mobile .navbar__logo .logo__img {
+        height: 5rem;
+    }
+
+    .navbar .mobile .navbar__logo .logo-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .mobile .nav__menu {
+        position: absolute;
+        left: 0;
+        z-index: 40;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    .navbar .mobile .nav__menu .nav__item .item__link {
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar .mobile .nav__menu li.drop-down > a::after {
+        float: right;
+    }
+
+    .navbar .mobile .navbar__logo .logo-brand .hamburger {
+        color: #FF512F;
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+
+    .drop-down-menu-mobile {
+        box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .drop-down-menu-mobile li {
+        margin: 0 2rem;
+    }
+
+    .drop-down-menu-mobile li .item__link--level-1,
+    .drop-down-menu-mobile li .item__link--level-2 {
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+        color: #5f5f5f;
+    }
+
+    .banner .banner__img {
+        margin-bottom: 6rem;
+    }
+
+    .working .working__block .working__loader {
+        display: none;
+    }
+
+    .quote .quote__block {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .quote .quote__block .quote__img {
+        max-width: 30%;
+        margin-bottom: 2rem;
+    }
+
+    .footer .col-12 {
+        margin-bottom: 3rem;
+    }
+
+    .footer .copyright .footer-social {
+        justify-content: unset;
+    }
+
+    .team-banner .team-banner__content {
+        text-align: center;
+    }
+
+    .team-banner .team-banner__content .breadcrumb {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .team-single-detail .sing-img {
+        width: 100%;
+    }
+
+    .team-single-detail .single__content .single__title {
+        margin-top: 3rem;
+    }
+
+    .team-expert .clients-logo {
+        margin: 2rem 0;
+    }
+
+    .blogs .blog__block .blog__top .img-fluid {
+        width: 100%;
+    }
+
+    #carousel-custom-dots {
+        padding-bottom: 20%;
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner .banner__block .banner__title {
+        font-size: 1.5rem;
+    }
+    .banner .banner__block .banner__heading {
+        font-size: 5rem;
+    }
+    .team-skill .feature__block {
+        text-align: left;
+        margin-top: 3rem;
+    }
+
+    .about-feature .feature__block {
+        margin-top: 3rem;
+    }
+
+
+    .about-timeline {
+        padding: 5rem 0 !important;
+    }
+
+    .about-timeline .timeline {
+
+    }
+
+    .about-timeline .container {
+        max-width: 100%;
+    }
+
+    .about-timeline .timeline .timeline__item {
+
+    }
+
+    .about-timeline .timeline .timeline__item .timeline__image h4 {
+        font-size: 1rem;
+    }
+
+    .about-timeline .timeline .timeline__item .timeline__panel {
+        margin-left: auto;
+        text-align: left;
+        flex-basis: 90%;
+    }
+
+    .about-timeline .timeline .timeline__title {
+        text-align: left !important;
+        margin-left: 1rem;
+    }
+
+    .about-timeline .timeline:before {
+        left: 0 !important;
+        transform: translateX(1rem);
+    }
+
+    .about-timeline .timeline .timeline__item .timeline__loader {
+        left: 1rem !important;
+    }
+
+    .about-timeline .timeline .timeline__item:after {
+        left: 1rem !important;
+    }
+}
+
+@media (max-width: 519px) {
+    .team-single-detail .single__content .single__icon {
+        flex-direction: column;
+    }
+    .team-single-detail .single__content .single__icon li i {
+        margin-bottom: 2rem;
+    }
+}

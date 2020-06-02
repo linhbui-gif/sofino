@@ -1,0 +1,346 @@
+
+.banner {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.banner .bg-full-screen {
+    background-color: rgb(251, 251, 251);
+    min-height: 70rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner .bg-animation {
+    position: absolute;
+    animation: zoom-fade 5s linear infinite;
+    top: 0;
+    max-height: 70rem;
+    overflow: hidden;
+}
+
+@-webkit-keyframes zoom-fade {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+.banner .banner__img {
+    max-width: 95%;
+    display: block;
+    animation: tada 2s;
+}
+
+@keyframes tada {
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.banner .banner__block {}
+.banner .banner__block .banner__title{
+    background: #ffb58c;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    display: inline-block;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1c1d3e;
+    animation: fadeInDown 1.5s;
+}
+.banner .banner__block .banner__heading{
+    font-size: 6rem;
+    line-height: 7rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #1c1d3e;
+    letter-spacing: 0;
+    margin: 2rem 0;
+    animation: jackInTheBox 2s;
+}
+
+.banner .banner__block .banner__description{
+    font-weight: normal;
+    line-height: 3rem;
+    letter-spacing: 1px;
+}
+
+.team-banner {
+    padding: 20rem 0;
+    position: relative;
+    background-color: rgb(251, 243, 237);
+    overflow: hidden;
+}
+
+.team-banner .bg-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.team-banner .team-banner__content {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    z-index: 10;
+}
+.team-banner .team-banner__content .team-banner__heading{
+    font-size: 5rem;
+    color: #1c1d3e;
+    line-height: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.team-banner .team-banner__content .team-banner__description{
+    color: #1c1d3e;
+    line-height: 1.7;
+}
+.team-banner .team-banner__content .breadcrumb {
+    display: flex;
+    justify-content: flex-end;
+}
+.team-banner .team-banner__content .breadcrumb .breadcrumb-item{}
+.team-banner .team-banner__content .breadcrumb .breadcrumb-item a{
+    color: #1c1d3e;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.team-banner .team-banner__content .breadcrumb .breadcrumb-item::after {
+    content: "/";
+    padding: 1rem;
+}
+
+.team-banner .team-banner__content .breadcrumb .breadcrumb-item:last-child::after {
+    content:'';
+}
+
+.team-banner .bg-animation {
+    position: absolute;
+    top: 0;
+    animation: falling 4s linear infinite;
+    z-index: 0;
+}
+
+@keyframes falling {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50%);
+    }
+}
+@media (max-width: 991px) {
+    .navbar {
+
+    }
+
+    .navbar .mobile {
+        display: block;
+        position: relative;
+    }
+
+
+    .navbar .navbar__block {
+       display: none;
+    }
+
+    .navbar .mobile .navbar__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar .mobile .navbar__logo .logo__img {
+        height: 5rem;
+    }
+
+    .navbar .mobile .navbar__logo .logo-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar .mobile .nav__menu {
+        position: absolute;
+        left: 0;
+        z-index: 40;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 100%;
+        box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    .navbar .mobile .nav__menu .nav__item .item__link {
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navbar .mobile .nav__menu li.drop-down > a::after {
+        float: right;
+    }
+
+    .navbar .mobile .navbar__logo .logo-brand .hamburger {
+        color: #FF512F;
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+
+    .drop-down-menu-mobile {
+        box-shadow: 7px 5px 30px rgba(72,73,121,0.15);
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .drop-down-menu-mobile li {
+        margin: 0 2rem;
+    }
+
+    .drop-down-menu-mobile li .item__link--level-1,
+    .drop-down-menu-mobile li .item__link--level-2 {
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+        color: #5f5f5f;
+    }
+
+    .banner .banner__img {
+        margin-bottom: 6rem;
+    }
+
+    .working .working__block .working__loader {
+        display: none;
+    }
+
+    .quote .quote__block {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .quote .quote__block .quote__img {
+        max-width: 30%;
+        margin-bottom: 2rem;
+    }
+
+    .footer .col-12 {
+        margin-bottom: 3rem;
+    }
+
+    .footer .copyright .footer-social {
+        justify-content: unset;
+    }
+
+    .team-banner .team-banner__content {
+        text-align: center;
+    }
+
+    .team-banner .team-banner__content .breadcrumb {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .team-single-detail .sing-img {
+        width: 100%;
+    }
+
+    .team-single-detail .single__content .single__title {
+        margin-top: 3rem;
+    }
+
+    .team-expert .clients-logo {
+        margin: 2rem 0;
+    }
+
+    .blogs .blog__block .blog__top .img-fluid {
+        width: 100%;
+    }
+
+    #carousel-custom-dots {
+        padding-bottom: 20%;
+        padding-top: 4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner .banner__block .banner__title {
+        font-size: 1.5rem;
+    }
+    .banner .banner__block .banner__heading {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .team-banner .team-banner__content .breadcrumb {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,96 @@
+
+.amazing-feature {
+    padding: 8rem 0;
+    background-color: rgb(251, 251, 251);
+}
+
+.amazing-feature .feature__heading {
+    font-size: 4rem;
+    font-style: normal;
+    line-height: 4.6rem;
+    font-weight: 600;
+    color: #1c1d3e;
+    margin-bottom: 1.5rem;
+}
+
+.amazing-feature .feature__description {
+    line-height: 1.7;
+    color: #5f5f5f;
+    margin-bottom: 4rem;
+}
+
+.amazing-feature .amazing-feature__block {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.amazing-feature .amazing-feature__block .block__icon {
+    margin-right: 3rem;
+}
+
+.amazing-feature .amazing-feature__block .block__icon i {
+    font-size: 3rem;
+    padding: 2.5rem;
+    color: #FF512F;
+    background: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 15px 0 rgba(72,73,121,0.15);
+    position: relative;
+}
+
+.amazing-feature .amazing-feature__block .block__header {
+    text-align: left;
+}
+
+.amazing-feature .amazing-feature__block .block__header .block__heading {
+    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 1.5rem;
+}
+.amazing-feature .amazing-feature__block .block__header .block__description{
+    line-height: 1.7;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+}
+
+.amazing-feature .amazing-feature__block:hover .block__icon i::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px dashed #FF512F;
+    animation: rotate 4s linear infinite;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.amazing-feature .amazing-feature__effect {
+    height: 5rem;
+    width: 5rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.amazing-feature .amazing-feature__effect .feature__animation {
+    margin-bottom: 2rem;
+    background-color: #FF512F;
+    border-radius: 50%;
+    animation: ellipse-animation 2.4s 0s infinite;
+    height: 100%;
+    width: 100%;
+}
+
+.amazing-feature .amazing-feature__effect i {
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

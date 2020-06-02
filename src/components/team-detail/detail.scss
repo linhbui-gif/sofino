@@ -1,0 +1,89 @@
+
+.team-single-detail {
+    padding: 8rem 0;
+    background-image: url("http://themeht.com/softino/html/multipage/ltr/images/pattern/03.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-single-detail .sing-img {
+    border-radius: 5px;
+}
+
+.team-single-detail .single__content {
+    font-family: 'Nunito', sans-serif;
+}
+.team-single-detail .single__content .single__title{
+    color: #FF512F;
+    font-size: 1.7rem;
+    line-height: 22px;
+    font-weight: normal;
+}
+.team-single-detail .single__content .single__heading{
+    color: #1c1d3e;
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.team-single-detail .single__content .single__description{
+    font-weight: normal;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.team-single-detail .single__content .single__description.text-lead {
+    font-size: 1.7rem;
+    color: #1c1d3e;
+}
+
+.team-single-detail .single__content .single__icon {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.team-single-detail .single__content .single__icon li i {
+    color: #FF512F;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    box-shadow: 0 0 15px 0 rgba(72,73,121,0.15);
+    display: inline-block;
+}
+
+.team-single-detail .single__content .single__icon li {
+    margin-right: 1rem;
+}
+
+.team-single-detail .single__content .single__icon li a {
+    color: #1c1d3e;
+    margin: 0 1rem;
+}
+
+.team-single-detail .single__content .single__social-icon {
+    display: flex;
+}
+
+.team-single-detail .single__content .single__social-icon li {
+    margin: 0 0.5rem;
+}
+
+.team-single-detail .single__content .single__social-icon li .social-icon__link {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    color: #fff;
+    border: 0;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.team-single-detail .single__content .single__social-icon li:hover .social-icon__link {
+    transform: rotateY(360deg);
+}
