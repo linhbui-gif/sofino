@@ -36,7 +36,7 @@ export default function Banner({firstkey,lastkey,nameCate,...props}) {
           </div>
         </div>
         <div className="bg-animation">
-          <img className="img-fluid" src="images/download.png" alt="test"/>
+
         </div>
         <div className="bg-banner">
           <img
